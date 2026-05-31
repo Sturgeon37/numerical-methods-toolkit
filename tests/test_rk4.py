@@ -2,10 +2,6 @@ import os
 import sys
 import numpy as np
 import pytest
-
-# Подключаем родительскую директорию проекта, чтобы pytest видел пакет numtoolkit
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 import numtoolkit as nt
 
 
