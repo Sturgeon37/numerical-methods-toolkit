@@ -1,11 +1,14 @@
 import os
 import sys
 import matplotlib.pyplot as plt
-
-# Динамическое добавление родительской папки проекта в PATH для корректного импорта numtoolkit
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 import numtoolkit as nt
+
+"""
+Симуляция аттрактора Лоренца на RK4.
+dx/dt = sigma(y - x)
+dy/dt = x(rho - z) - y
+dz/dt = xy - beta z
+"""
 
 def main():
     print("Запуск симуляции системы Лоренца с использованием метода RK4...")
